@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Angela Ave B. Ablao</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            color: black;
+            font-size: 14px;
+            line-height: 1.25;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            padding: 18mm 25mm 15mm 25mm;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER AND PROFILE PHOTO */
+
+        .header {
+            margin-bottom: 18px;
+            position: relative;
+            min-height: 130px;
+            padding-right: 130px;
+        }
+
+        .header h3 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 2px;
+        }
+
+        .header p {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .header a {
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 110px;
+            height: 130px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        /* SECTION HEADINGS */
+
+        section h2 {
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            margin-bottom: 2px;
+            padding: 1px 0;
+        }
+
+        /* CAREER OBJECTIVES */
+
+        .career p {
+            text-align: left;
+            text-indent: 45px;
+            padding: 0 2px;
+        }
+
+        /* PERSONAL INFORMATION */
+
+        .personal {
+            margin-bottom: 18px;
+        }
+
+        .personal-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .personal-left p,
+        .personal-right p {
+            margin-bottom: 1px;
+        }
+
+        /* EDUCATIONAL ATTAINMENT */
+
+        .education-row {
+            display: grid;
+            grid-template-columns: 43% 57%;
+            margin-bottom: 5px;
+        }
+
+        .education-label,
+        .education-details {
+            font-size: 14px;
+        }
+
+        /* CHARACTER REFERENCES */
+
+        .references {
+            margin-bottom: 18px;
+        }
+
+        .reference-info {
+            margin-top: 17px;
+        }
+
+        /* CERTIFICATION */
+
+        .certification p {
+            text-align: center;
+            font-style: italic;
+            text-indent: 35px;
+            max-width: 490px;
+            margin: 0 auto;
+        }
+
+        /* SIGNATURE */
+
+        .signature {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+        }
+
+        .signature-content {
+            width: 210px;
+        }
+
+        .applicant-name {
+            text-decoration: underline;
+        }
+
+        /* PRINT SETTINGS */
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .resume {
+                margin: 0;
+                width: 210mm;
+                min-height: 297mm;
+            }
+        }
+
+        /* TABLET AND SMALLER SCREENS */
+
+        @media screen and (max-width: 800px) {
+            .resume {
+                width: 100%;
+                min-height: 100vh;
+                margin: 0;
+                padding: 25px 20px;
+            }
+
+            .personal-container {
+                gap: 15px;
+            }
+        }
+
+        /* MOBILE SCREENS */
+
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 12px;
+            }
+
+            .resume {
+                padding: 20px 12px;
+            }
+
+            .header {
+                padding-right: 100px;
+                min-height: 110px;
+            }
+
+            .header h3 {
+                font-size: 13px;
+            }
+
+            .header p {
+                font-size: 11px;
+                overflow-wrap: anywhere;
+            }
+
+            .profile-photo {
+                width: 85px;
+                height: 105px;
+            }
+
+            .personal-container {
+                gap: 10px;
+            }
+
+            .personal-left,
+            .personal-right,
+            .education-label,
+            .education-details {
+                font-size: 12px;
+            }
+
+            section h2 {
+                font-size: 14px;
+            }
+
+            .signature {
+                margin-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="resume">
+
+        <!-- HEADER WITH YOUR PHOTO -->
+
+        <header class="header">
+
+            <img
+                src="image(4).png"
+                alt="Angela Ave B. Ablao"
+                class="profile-photo"
+            >
+
+            <h3>ABLAO, ANGELA AVE B.</h3>
+
+            <p>
+                Mobile Number:
+                <em>0948-417-0320</em>
+            </p>
+
+            <p>
+                E-mail Address:
+                <a href="mailto:angela17ave.b.ablao@gmail.com">
+                    angela17ave.b.ablao@gmail.com
+                </a>
+            </p>
+
+        </header>
+
+        <!-- CAREER OBJECTIVES -->
+
+        <section class="career">
+
+            <h2>CAREER OBJECTIVES</h2>
+
+            <p>
+                I am seeking a suitable immersion opportunity
+                that will allow me to apply my knowledge,
+                strengthen my professional character,
+                and maximize my skills.
+            </p>
+
+        </section>
+
+        <!-- PERSONAL INFORMATION -->
+
+        <section class="personal">
+
+            <h2>PERSONAL INFORMATION</h2>
+
+            <div class="personal-container">
+
+                <div class="personal-left">
+
+                    <p><strong>Full Name:</strong> Ablao, Angela Ave B.</p>
+
+                    <p><strong>Birthdate:</strong> March 18, 2008</p>
+
+                    <p><strong>Age:</strong> 18 years old</p>
+
+                    <p><strong>Place of Birth:</strong></p>
+
+                    <p><strong>Sex:</strong> Female</p>
+
+                    <p><strong>Height:</strong> 5'1"</p>
+
+                    <p><strong>Civil Status:</strong> Single</p>
+
+                    <p><strong>Nationality:</strong> Filipino</p>
+
+                    <p><strong>Religion:</strong> Christian</p>
+
+                    <p>
+                        <strong>Language Spoken:</strong>
+                        English, Hiligaynon, Tagalog
+                    </p>
+
+                    <p>
+                        <strong>Name of Mother:</strong>
+                        Jinky Ablao
+                    </p>
+
+                </div>
+
+                <div class="personal-right">
+
+                    <p>
+                        <strong>Occupation:</strong>
+                        Construction Management
+                    </p>
+
+                    <p>
+                        <strong>Name of Father:</strong>
+                        Benjie Ablao
+                    </p>
+
+                    <p>
+                        <strong>Occupation:</strong>
+                        Construction Management
+                    </p>
+
+                    <p>
+                        <strong>Contact Number of Parents:</strong>
+                        <br>
+                        <em>0930-079-5788/0910-102-1125</em>
+                    </p>
+
+                    <p>
+                        <strong>Skills:</strong>
+                        Demonstrates strong communication abilities,
+                        interpersonal competence, and quick
+                        decision-making
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- EDUCATIONAL ATTAINMENT -->
+
+        <section class="education">
+
+            <h2>EDUCATIONAL ATTAINMENT</h2>
+
+            <!-- COLLEGE -->
+
+            <div class="education-row">
+
+                <div class="education-label">
+                    COLLEGE:
+                </div>
+
+                <div class="education-details">
+                    Bacolod City College
+                    <br>
+                    MX42+FV4, Bacolod, 6100 Negros Occidental
+                    <br>
+                    Associate in Computer Technology
+                </div>
+
+            </div>
+
+            <!-- SENIOR HIGH SCHOOL -->
+
+            <div class="education-row">
+
+                <div class="education-label">
+                    SENIOR HIGH SCHOOL:
+                </div>
+
+                <div class="education-details">
+                    Bacolod City National High School
+                    <br>
+                    P. Hernaez Extension, Brgy. Taculing,
+                    Bacolod City
+                </div>
+
+            </div>
+
+            <!-- STRAND -->
+
+            <div class="education-row">
+
+                <div class="education-label">
+                    STRAND:
+                </div>
+
+                <div class="education-details">
+                    Technical Vocational Livelihood
+                    (Food and Beverages Services)
+                    <br>
+                    (2024-2026)
+                </div>
+
+            </div>
+
+            <!-- SECONDARY LEVEL -->
+
+            <div class="education-row">
+
+                <div class="education-label">
+                    SECONDARY LEVEL:
+                </div>
+
+                <div class="education-details">
+                    Bacolod City National High School
+                    <br>
+                    P. Hernaez Extension, Brgy. Taculing,
+                    Bacolod City
+                    <br>
+                    (2021-2024)
+                </div>
+
+            </div>
+
+            <!-- PRIMARY LEVEL -->
+
+            <div class="education-row">
+
+                <div class="education-label">
+                    PRIMARY LEVEL:
+                </div>
+
+                <div class="education-details">
+                    Shiloh Christian School
+                    <br>
+                    MX35+V73, Bacolod
+                    <br>
+                    (2019-2021)
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CHARACTER REFERENCES -->
+
+        <section class="references">
+
+            <h2>CHARACTER REFERENCES</h2>
+
+            <div class="reference-info">
+
+                <p>MA. ALMIRA P. PALADA, LPT</p>
+
+                <p>Class Adviser</p>
+
+                <p>Bacolod City National High School</p>
+
+                <p>Senior High School Department</p>
+
+                <p>09499750754</p>
+
+            </div>
+
+        </section>
+
+        <!-- CERTIFICATION -->
+
+        <section class="certification">
+
+            <p>
+                I hereby certify that the above information
+                is true and correct to the best of my
+                knowledge, belief, and ability.
+            </p>
+
+        </section>
+
+        <!-- SIGNATURE -->
+
+        <footer class="signature">
+
+            <div class="signature-content">
+
+                <p class="applicant-name">
+                    ABLAO, ANGELA AVE B.
+                </p>
+
+                <p>Applicant</p>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
